@@ -1,13 +1,13 @@
-# 🌍 Kalkulator CO₂ + Quiz ECO
+# Kalkulator CO₂ + Quiz ECO
 
 Prosta aplikacja webowa do obliczania śladu węglowego oraz edukacji ekologicznej poprzez interaktywny quiz ECO.
 
-## 📸 Podgląd
+##  Podgląd
 
 Aplikacja składa się z głównego panelu startowego, który pozwala przejść do:
-- 📊 Kalkulatora CO₂
-- 🌱 Quizu ECO
-- ⚠️ Strefy tworzenia (tryb developerski / edycji)
+-  Kalkulatora CO₂
+-  Quizu ECO
+-  Strefy tworzenia (tryb developerski / edycji)
 
 ---
 
