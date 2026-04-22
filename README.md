@@ -38,7 +38,6 @@ W zależności od implementacji projekt może wykorzystywać:
 
 - HTML5
 - CSS3 (gradienty, animacje UI)
-- JavaScript (logika kalkulatora i quizu)
 - (opcjonalnie) React / Vue / inny framework
 
 ---
