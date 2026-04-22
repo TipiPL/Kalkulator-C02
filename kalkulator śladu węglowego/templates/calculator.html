@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<a href="/" class="back">← Powrót</a>
+
+<h1>Kalkulator CO₂</h1>
+
+<form method="POST">
+
+<label>Samochód (km/dzień)</label>
+<input name="car">
+
+<label>Autobus (km/dzień)</label>
+<input name="bus">
+
+<label>Mięso (posiłki/tydzień)</label>
+<input name="meat">
+
+<label>Prąd (kWh/miesiąc)</label>
+<input name="power">
+
+<button type="submit">Oblicz</button>
+
+</form>
+
+{% if result is not none %}
+<div class="result">
+    Twój ślad: <b>{{ result|round(0) }} kg CO₂/rok</b>
+</div>
+
+<div class="advice">
+    {{ advice }}
+</div>
+{% endif %}
+
+</body>
+</html>
