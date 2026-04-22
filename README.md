@@ -1,1 +1,1 @@
-# Kalkulator-C02
+Moim pomysłem na projekt jest Kalkukator CO2
