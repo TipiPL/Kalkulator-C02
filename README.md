@@ -11,7 +11,7 @@ Aplikacja składa się z głównego panelu startowego, który pozwala przejść 
 
 ---
 
-## 🚀 Funkcje
+##  Funkcje
 
 ###  Kalkulator CO₂
 Pozwala użytkownikowi oszacować swój ślad węglowy na podstawie codziennych aktywności (np. transport, energia, styl życia).
