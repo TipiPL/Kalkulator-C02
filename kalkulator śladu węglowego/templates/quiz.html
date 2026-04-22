@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz ECO</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<a href="/" class="back">← Powrót</a>
+
+<h1>🌍 Quiz ECO</h1>
+
+<div class="card">
+
+    <h2>1. Co najbardziej zanieczyszcza powietrze?</h2>
+    <button onclick="answer(1, false)">Rower</button>
+    <button onclick="answer(1, true)">Samochody</button>
+    <button onclick="answer(1, false)">Rośliny</button>
+
+    <h2>2. Co jest bardziej ekologiczne?</h2>
+    <button onclick="answer(2, true)">Transport publiczny</button>
+    <button onclick="answer(2, false)">Samolot</button>
+    <button onclick="answer(2, false)">SUV</button>
+
+    <h2>3. Co pomaga planecie?</h2>
+    <button onclick="answer(3, false)">Marnowanie jedzenia</button>
+    <button onclick="answer(3, true)">Recykling</button>
+    <button onclick="answer(3, false)">Plastik jednorazowy</button>
+
+    <hr>
+
+    <p>Wynik: <span id="score">0</span>/3</p>
+    <p id="result"></p>
+
+</div>
+
+<script>
+let score = 0;
+let answered = [false,false,false];
+
+function answer(q, correct) {
+
+    if (answered[q-1]) return;
+    answered[q-1] = true;
+
+    if (correct) score++;
+
+    document.getElementById("score").innerText = score;
+
+    if (answered.every(a => a)) {
+        showResult();
+    }
+}
+
+function showResult() {
+    let text = "";
+
+    if (score == 3) text = "🔥 Ekologiczny mistrz!";
+    else if (score == 2) text = "👍 Dobrze, ale możesz się poprawić";
+    else text = "⚠️ Warto dowiedzieć się więcej o ekologii";
+
+    document.getElementById("result").innerText = text;
+}
+</script>
+
+</body>
+</html>

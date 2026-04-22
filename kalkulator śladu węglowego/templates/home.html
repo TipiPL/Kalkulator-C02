@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="center">
+
+<div class="card">
+
+    <h1>Kalkulator CO₂ 🌍</h1>
+
+    <a href="/kalkulator">
+        <button class="main-btn">Kalkulator</button>
+    </a>
+
+<a href="/quiz">
+    <button class="main-btn">🌍 Quiz ECO</button>
+</a>
+
+<button class="warn-btn" onclick="startCountdown()">
+    ⚠ UWAGA W STREFIE TWORZENIA
+</button>
+
+<div id="countdown"></div>
+
+<script>
+function startCountdown() {
+
+    const box = document.getElementById("countdown");
+
+    let time = 10;
+
+    box.innerHTML = "⚠ START: " + time;
+
+    const interval = setInterval(() => {
+        time--;
+
+        box.innerHTML = "⚠ ODLICZANIE: " + time;
+
+        if (time <= 0) {
+            clearInterval(interval);
+
+            box.innerHTML = "💥 SYSTEM WYŁĄCZONY";
+
+            setTimeout(() => {
+                window.location.href = "https://www.google.com";
+            }, 1000);
+        }
+    }, 1000);
+}
+</script>
+
+
+</div>
+
+</body>
+</html>
