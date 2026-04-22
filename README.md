@@ -42,8 +42,7 @@ W zależności od implementacji projekt może wykorzystywać:
 - (opcjonalnie) React / Vue / inny framework
 
 ---
-
-## 📦Instalacja
+#BĘDĄ AKUALIZACJĘ
 
 ```bash
 git clone https://github.com/twoj-username/kalkulator-co2.git
